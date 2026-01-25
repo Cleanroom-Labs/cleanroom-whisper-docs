@@ -4,7 +4,7 @@ Use Case Analysis
 Purpose
 -------
 
-This document provides an overview of primary use cases for AirGap Whisper, an offline audio transcription application designed for privacy-conscious users who need reliable voice-to-text conversion without cloud dependencies.
+This document provides an overview of primary use cases for Cleanroom Whisper, an offline audio transcription application designed for privacy-conscious users who need reliable voice-to-text conversion without cloud dependencies.
 
 --------------
 
@@ -95,7 +95,7 @@ Interview Transcription
 **Workflow:**
 
 1. Play interview audio through system audio
-2. Use AirGap Whisper to record system audio output
+2. Use Cleanroom Whisper to record system audio output
 3. Transcribe in sections (e.g., 5-10 minute chunks)
 4. Review and copy each transcription
 5. Compile full transcript in document editor
@@ -195,9 +195,9 @@ With Other Applications
 With AirGap Deploy
 ~~~~~~~~~~~~~~~~~~
 
-AirGap Whisper can be deployed to air-gapped systems using AirGap Deploy:
+Cleanroom Whisper can be deployed to air-gapped systems using AirGap Deploy:
 
-- Package AirGap Whisper binary with vendored dependencies
+- Package Cleanroom Whisper binary with vendored dependencies
 - Include whisper.cpp source and pre-downloaded models
 - Transfer via AirGap Transfer if package exceeds USB capacity
 - Deploy and build on isolated system

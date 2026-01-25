@@ -1,5 +1,5 @@
-AirGap Whisper
-==============
+Cleanroom Whisper
+=================
 
 A minimal, keyboard-driven desktop application for offline audio transcription using `whisper.cpp <https://github.com/ggerganov/whisper.cpp>`__.
 
@@ -84,7 +84,7 @@ See :doc:`Roadmap <roadmap>` for complete build instructions and architecture de
 Air-Gapped Deployment
 ---------------------
 
-AirGap Whisper supports deployment on systems with no internet access. All dependencies can be vendored and transferred offline via USB or other secure methods.
+Cleanroom Whisper supports deployment on systems with no internet access. All dependencies can be vendored and transferred offline via USB or other secure methods.
 
 For detailed air-gap deployment procedures, see the AirGap Deploy project documentation.
 
@@ -93,19 +93,19 @@ For detailed air-gap deployment procedures, see the AirGap Deploy project docume
 Privacy
 -------
 
-AirGap Whisper is **private by architecture**:
+Cleanroom Whisper is **private by architecture**:
 
 - Zero network code in the application
 - No analytics, telemetry, or crash reporting
 - No update checks or external API calls
 - All audio and transcriptions stay on your machine
 
-.. _airgap-whisper-readme-competition:
+.. _cleanroom-whisper-readme-competition:
 
-Why AirGap Whisper?
--------------------
+Why Cleanroom Whisper?
+----------------------
 
-AirGap Whisper is the **only cross-platform, open-source, air-gap-ready voice transcription tool** optimized for quick capture workflows in privacy-sensitive environments.
+Cleanroom Whisper is the **only cross-platform, open-source, air-gap-ready voice transcription tool** optimized for quick capture workflows in privacy-sensitive environments.
 
 **vs macOS-only tools** (`MacWhisper <https://goodsnooze.gumroad.com/l/macwhisper>`__, `VoiceInk <https://github.com/gmelodie/voiceink>`__, `Superwhisper <https://superwhisper.com/>`__):
 

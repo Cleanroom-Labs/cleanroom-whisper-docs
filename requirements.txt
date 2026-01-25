@@ -1,4 +1,4 @@
-# Sphinx and extensions for AirGap Whisper documentation
+# Sphinx and extensions for Cleanroom Whisper documentation
 # Mirrors shared extensions from cleanroom-technical-docs/shared/extensions.txt
 
 sphinx>=7.0.0,<8.0.0

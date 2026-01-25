@@ -1,7 +1,7 @@
-AirGap Whisper
-===============
+Cleanroom Whisper
+=================
 
-AirGap Whisper is an end-user transcription application that runs entirely offline in air-gapped environments.
+Cleanroom Whisper is an end-user transcription application that runs entirely offline in air-gapped environments.
 
 .. toctree::
    :maxdepth: 2

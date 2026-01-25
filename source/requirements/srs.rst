@@ -7,12 +7,12 @@ Introduction
 Purpose
 ~~~~~~~
 
-This SRS defines MVP requirements for AirGap Whisper, an offline audio transcription app.
+This SRS defines MVP requirements for Cleanroom Whisper, an offline audio transcription app.
 
 Scope
 ~~~~~
 
-**Product:** AirGap Whisper — a minimal desktop app for voice-to-text using whisper.cpp.
+**Product:** Cleanroom Whisper — a minimal desktop app for voice-to-text using whisper.cpp.
 
 **In Scope:**
 

@@ -4,7 +4,7 @@ Software Design Document
 Introduction
 ---------------
 
-This SDD describes the architecture and design of AirGap Whisper’s MVP.
+This SDD describes the architecture and design of Cleanroom Whisper’s MVP.
 
 **Guiding document:** :doc:`Principles </meta/principles>`
 
@@ -408,7 +408,7 @@ First-Run Flow
 ::
 
    ┌───────────────────────────────────────────────────────┐
-   │                   Welcome to AirGap Whisper           │
+   │                   Welcome to Cleanroom Whisper           │
    ├───────────────────────────────────────────────────────┤
    │                                                       │
    │  To get started, configure your whisper.cpp paths:    │

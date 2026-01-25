@@ -1,6 +1,6 @@
-# AirGap Whisper Documentation
+# Cleanroom Whisper Documentation
 
-Documentation for AirGap Whisper - an offline audio transcription application using whisper.cpp.
+Documentation for Cleanroom Whisper - an offline audio transcription application using whisper.cpp.
 
 ## Building Documentation
 
@@ -50,7 +50,7 @@ To reference other AirGap projects:
 
 ## Resources
 
-- [AirGap Whisper Overview](source/readme.rst)
+- [Cleanroom Whisper Overview](source/readme.rst)
 - [Requirements Specification](source/requirements/srs.rst)
 - [Design Document](source/design/sdd.rst)
 - [Roadmap](source/roadmap.rst)

@@ -1,5 +1,5 @@
-AirGap Whisper API Reference
-==============================
+Cleanroom Whisper API Reference
+===============================
 
 .. note::
 
@@ -9,7 +9,7 @@ AirGap Whisper API Reference
 Planned Architecture
 --------------------
 
-Based on :doc:`/airgap-whisper/design/sdd`, AirGap Whisper will consist of these modules:
+Based on :doc:`/airgap-whisper/design/sdd`, Cleanroom Whisper will consist of these modules:
 
 Audio Module (``audio``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
