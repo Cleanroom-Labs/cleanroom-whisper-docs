@@ -28,67 +28,7 @@ extensions.extend([
 
 # -- sphinx-needs configuration ----------------------------------------------
 
-needs_types = [
-    {
-        'directive': 'usecase',
-        'title': 'Use Case',
-        'prefix': 'UC-WHISPER-',
-        'color': '#BFD8D2',
-        'style': 'node'
-    },
-    {
-        'directive': 'req',
-        'title': 'Requirement',
-        'prefix': 'FR-WHISPER-',
-        'color': '#FEDCD2',
-        'style': 'node'
-    },
-    {
-        'directive': 'nfreq',
-        'title': 'Non-Functional Requirement',
-        'prefix': 'NFR-WHISPER-',
-        'color': '#DF744A',
-        'style': 'node'
-    },
-    {
-        'directive': 'spec',
-        'title': 'Design Specification',
-        'prefix': 'DS-WHISPER-',
-        'color': '#DCB239',
-        'style': 'node'
-    },
-    {
-        'directive': 'test',
-        'title': 'Test Case',
-        'prefix': 'TC-WHISPER-',
-        'color': '#84B39D',
-        'style': 'node'
-    },
-]
-
-needs_extra_links = [
-    {
-        'option': 'tests',
-        'incoming': 'is tested by',
-        'outgoing': 'tests',
-        'copy': False,
-        'color': '#84B39D'
-    },
-    {
-        'option': 'implements',
-        'incoming': 'is implemented by',
-        'outgoing': 'implements',
-        'copy': False,
-        'color': '#00A8B5'
-    },
-]
-
-needs_build_needflow = True
-needs_flow_show_links = True
-needs_flow_link_types = ['links', 'tests', 'implements']
-needs_flow_engine = 'graphviz'
-needs_id_regex = '^[A-Z0-9_-]{3,}'
-needs_extra_options = ['priority']
+needs_types = make_needs_types('WHISPER-')
 
 # -- Intersphinx configuration -----------------------------------------------
 
