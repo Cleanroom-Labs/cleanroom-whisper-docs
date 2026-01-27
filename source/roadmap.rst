@@ -1,6 +1,8 @@
 Project Roadmap
 ===============
 
+|status-planned|
+
 Build a transcription app you want to use. Share it with the world. See what happens.
 
 **Guiding document:** :doc:`Principles </meta/principles>`
