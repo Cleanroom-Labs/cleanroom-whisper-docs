@@ -29,6 +29,7 @@ extensions.extend([
 # -- sphinx-needs configuration ----------------------------------------------
 
 needs_types = make_needs_types('WHISPER-')
+needs_build_json = True
 
 # -- Intersphinx configuration -----------------------------------------------
 
