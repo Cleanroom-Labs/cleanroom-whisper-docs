@@ -1,5 +1,5 @@
-Cleanroom Whisper API Reference
-===============================
+API Reference
+=============
 
 .. note::
 
@@ -55,104 +55,19 @@ Tray Module (``tray``)
 - ``HotkeyManager`` - Global hotkey registration
 - ``Settings`` - User configuration management
 
-Integration with Sphinx
-------------------------
+Developer Resources
+-------------------
 
-Rust Doc Comment Guidelines
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Write doc comments that reference requirements for traceability:
-
-.. code-block:: rust
-
-   /// Global hotkey manager for recording controls.
-   ///
-   /// Registers system-wide hotkeys that work even when the application
-   /// is not focused. Supports start/stop recording toggle.
-   ///
-   /// # Implements
-   ///
-   /// - [`FR-WHISPER-001`]: Global hotkey toggles recording
-   /// - [`FR-WHISPER-011`]: Configurable hotkey binding
-   ///
-   /// # Example
-   ///
-   /// ```no_run
-   /// let manager = HotkeyManager::new();
-   /// manager.register("Ctrl+Alt+R", |_| {
-   ///     println!("Recording toggled");
-   /// });
-   /// ```
-   pub struct HotkeyManager {
-       // ...
-   }
-
-Using sphinxcontrib-rust
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Once code exists, integrate with Sphinx:
-
-**Generate Rust docs:**
-
-   .. code-block:: bash
-
-      cargo doc --no-deps --document-private-items
-
-**Configure sphinxcontrib-rust in conf.py:**
-
-   .. code-block:: python
-
-      extensions = [
-          # ... existing extensions
-          'sphinxcontrib.rust',
-      ]
-
-      rust_crates = {
-          'airgap-whisper': '../airgap-whisper',
-      }
-
-**Reference Rust items in RST:**
-
-   .. code-block:: rst
-
-      See :rust:struct:`HotkeyManager` for hotkey management.
-
-**Build documentation:**
-
-   .. code-block:: bash
-
-      cd sphinx-docs
-      make html
-
-Traceability Linking
-~~~~~~~~~~~~~~~~~~~~
-
-Link code documentation back to requirements using custom directives:
-
-.. code-block:: rst
-
-   .. impl:: Audio Recording Implementation
-      :id: IMPL-WHISPER-001
-      :implements: FR-WHISPER-001, FR-WHISPER-002, FR-WHISPER-003
-      :status: planned
-      :location: src/audio/recorder.rs
-
-      Implementation of audio recording using ALSA (Linux) / CoreAudio (macOS)
+See `Rust API Documentation Integration Guide <../../meta/rust-integration-guide.html>`__ for doc comment guidelines, sphinxcontrib-rust configuration, and traceability linking.
 
 Future Enhancements
 -------------------
 
 When implementation begins:
 
-Add ``.. impl::`` directives for each major component
-Link implementations to requirements in traceability matrix
-Auto-generate API docs with sphinxcontrib-rust
-Add code examples to test cases for validation
-Update needflow diagrams to include implementation nodes
+- Add ``.. impl::`` directives for each major component
+- Link implementations to requirements in traceability matrix
+- Auto-generate API docs with sphinxcontrib-rust
+- Add code examples to test cases for validation
+- Update needflow diagrams to include implementation nodes
 
-See Also
---------
-
-- :doc:`../requirements/srs` - Requirements this API implements
-- :doc:`../design/sdd` - Detailed design specifications
-- :doc:`../testing/plan` - Test cases validating this API
