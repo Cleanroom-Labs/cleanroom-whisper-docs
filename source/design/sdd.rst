@@ -6,7 +6,7 @@ Introduction
 
 This SDD describes the architecture and design of Cleanroom Whisper’s MVP.
 
-**Guiding document:** `Principles <https://cleanroomlabs.dev/docs/meta/principles/>`_
+**Guiding document:** `Principles <https://cleanroomlabs.dev/docs/meta/principles.html>`_
 
 Architecture Overview
 ---------------------
@@ -68,7 +68,7 @@ Design Rationale
 File Structure
 --------------
 
-Per `Principles <https://cleanroomlabs.dev/docs/meta/principles/>`_: **5 Rust files, flat structure. No frontend.**
+Per `Principles <https://cleanroomlabs.dev/docs/meta/principles.html>`_: **5 Rust files, flat structure. No frontend.**
 
 ::
 
@@ -471,7 +471,7 @@ Dependencies
 
 **8 crates.** Pure Rust, no WebView, no npm, no frontend build.
 
-See `Principles <https://cleanroomlabs.dev/docs/meta/principles/>`_ (Current Minimal Set section) for the authoritative dependency list with versions.
+See `Principles <https://cleanroomlabs.dev/docs/meta/principles.html>`_ (Current Minimal Set section) for the authoritative dependency list with versions.
 
 Security & Privacy
 ------------------
@@ -669,7 +669,7 @@ MVP Approach
 
 **MVP is English-only.** Localization is deferred until post-MVP based on user demand.
 
-This aligns with `Principles <https://cleanroomlabs.dev/docs/meta/principles/>`_: ship working software first, add features based on actual need.
+This aligns with `Principles <https://cleanroomlabs.dev/docs/meta/principles.html>`_: ship working software first, add features based on actual need.
 
 Localization-Ready Architecture
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

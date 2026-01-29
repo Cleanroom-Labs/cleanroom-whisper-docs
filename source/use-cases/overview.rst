@@ -17,7 +17,7 @@ Privacy-Conscious Professional
 - **Priority:** Data privacy, air-gap capability
 
 Productivity Enthusiast
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 - **Needs:** Fast voice-to-text for task capture
 - **Environment:** Personal productivity workflows
@@ -40,17 +40,25 @@ Researcher/Interviewer
 Primary Use Cases
 -----------------
 
-+---------------------------------------------+-------------------------------+-------------------------------------------+
-| Use Case                                    | Actor                         | Workflow                                  |
-+=============================================+===============================+===========================================+
-| :doc:`Quick Voice Memo <use-case-voice-memo>`| Individual user               | Hotkey → record → transcribe → clipboard  |
-+---------------------------------------------+-------------------------------+-------------------------------------------+
-| :doc:`Meeting Notes <use-case-meeting-notes>`| Meeting participant           | Record sections → review history → copy   |
-+---------------------------------------------+-------------------------------+-------------------------------------------+
-| :doc:`Interview <use-case-interview>`        | Researcher/journalist         | Play audio → record → compile transcript  |
-+---------------------------------------------+-------------------------------+-------------------------------------------+
-| :doc:`Accessibility <use-case-accessibility>`| User with mobility needs      | Accessible hotkey → dictate → paste       |
-+---------------------------------------------+-------------------------------+-------------------------------------------+
+.. list-table::
+   :header-rows: 1
+   :widths: 32 22 46
+
+   * - Use Case
+     - Actor
+     - Workflow
+   * - :doc:`Quick Voice Memo <use-case-voice-memo>`
+     - Individual user
+     - Hotkey -> record -> transcribe -> clipboard
+   * - :doc:`Meeting Notes <use-case-meeting-notes>`
+     - Meeting participant
+     - Record sections -> review history -> copy
+   * - :doc:`Interview <use-case-interview>`
+     - Researcher/journalist
+     - Play audio -> record -> compile transcript
+   * - :doc:`Accessibility <use-case-accessibility>`
+     - User with mobility needs
+     - Accessible hotkey -> dictate -> paste
 
 Common Requirements Across All Use Cases
 ----------------------------------------
@@ -99,7 +107,7 @@ Cleanroom Whisper can be deployed to air-gapped systems using AirGap Deploy:
 - Transfer via AirGap Transfer if package exceeds USB capacity
 - Deploy and build on isolated system
 
-**See:** :doc:`airgap-deploy:use-cases/use-case-airgap-whisper`
+**See:** `AirGap Deploy workflow example <https://cleanroomlabs.dev/docs/airgap-deploy/use-cases/use-case-airgap-whisper.html>`_
 
 Out of Scope
 ------------
@@ -139,4 +147,4 @@ See Also
 - :doc:`Requirements (SRS) <../requirements/srs>` - Detailed functional requirements
 - :doc:`Design (SDD) <../design/sdd>` - Architecture and implementation
 - :doc:`Roadmap <../roadmap>` - Implementation roadmap
-- `Principles <https://cleanroomlabs.dev/docs/meta/principles/>`_ - Design principles guiding all decisions
+- `Principles <https://cleanroomlabs.dev/docs/meta/principles.html>`_ - Design principles guiding all decisions
