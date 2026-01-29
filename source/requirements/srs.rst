@@ -2,7 +2,7 @@ Software Requirements Specification
 ===================================
 
 Introduction
----------------
+------------
 
 Purpose
 ~~~~~~~
@@ -14,6 +14,10 @@ Scope
 
 **Product:** Cleanroom Whisper — a minimal desktop app for voice-to-text using whisper.cpp.
 
+.. raw:: html
+
+   <div style="margin-top: 1.5em;"></div>
+
 **In Scope:**
 
 - Record audio from microphone
@@ -22,7 +26,7 @@ Scope
 - Global hotkeys for hands-free operation
 - System tray for background operation
 
-**Out of Scope (per** :doc:`Principles </meta/principles>`\ **):**
+**Out of Scope:**
 
 - Cloud sync, telemetry, auto-updates
 - FLAC compression, MP3/M4A import
@@ -40,10 +44,8 @@ Definitions
 | System tray           | OS notification area (menu bar on macOS, taskbar on Windows/Linux) |
 +-----------------------+--------------------------------------------------------------------+
 
---------------
-
 Overall Description
-----------------------
+-------------------
 
 Product Perspective
 ~~~~~~~~~~~~~~~~~~~
@@ -69,10 +71,8 @@ Constraints
 | Dependencies                    | User installs whisper.cpp and models                          |
 +---------------------------------+---------------------------------------------------------------+
 
---------------
-
 Functional Requirements
---------------------------
+-----------------------
 
 Priority: **M**\ ust / **S**\ hould / **C**\ ould
 
@@ -454,10 +454,8 @@ Deployment
 
    Single-directory deployment (app + whisper.cpp + model)
 
---------------
-
 Non-Functional Requirements
-------------------------------
+---------------------------
 
 .. needtable::
    :types: nfreq
@@ -691,10 +689,8 @@ Deployment
 
    Build and run on systems with no internet access
 
---------------
-
 Error Handling
------------------
+--------------
 
 +-----------------------------------+--------------------------------------------------------+
 | Scenario                          | Behavior                                               |
@@ -713,8 +709,6 @@ Error Handling
 +-----------------------------------+--------------------------------------------------------+
 | Hotkey conflict with system       | Warning in settings, allow override with confirmation  |
 +-----------------------------------+--------------------------------------------------------+
-
---------------
 
 Appendix: Default Hotkeys
 -------------------------

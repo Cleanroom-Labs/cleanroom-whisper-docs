@@ -2,16 +2,14 @@ Software Design Document
 ========================
 
 Introduction
----------------
+------------
 
 This SDD describes the architecture and design of Cleanroom Whisper’s MVP.
 
 **Guiding document:** :doc:`Principles </meta/principles>`
 
---------------
-
 Architecture Overview
-------------------------
+---------------------
 
 System Context
 ~~~~~~~~~~~~~~
@@ -67,10 +65,8 @@ Design Rationale
 | No traits                       | Only one implementation exists (YAGNI)                  |
 +---------------------------------+---------------------------------------------------------+
 
---------------
-
 File Structure
------------------
+--------------
 
 Per :doc:`Principles </meta/principles>`: **5 Rust files, flat structure. No frontend.**
 
@@ -88,10 +84,8 @@ Per :doc:`Principles </meta/principles>`: **5 Rust files, flat structure. No fro
    └── .cargo/
        └── config.toml   # Points to vendor directory
 
---------------
-
 Data Design
---------------
+-----------
 
 Database Schema
 ~~~~~~~~~~~~~~~
@@ -188,10 +182,8 @@ Data Retention Policy
 
 **Cleanup on delete:** Delete audio file if exists, then delete database row.
 
---------------
-
 Component Design
--------------------
+----------------
 
 audio.rs
 ~~~~~~~~
@@ -319,10 +311,8 @@ Transcribing Microphone Yellow/orange
 
 Icons should be simple, monochrome-friendly for macOS menu bar.
 
---------------
-
 Interaction Flows
---------------------
+-----------------
 
 Record and Transcribe
 ~~~~~~~~~~~~~~~~~~~~~
@@ -476,19 +466,15 @@ History Dialog
 - [Export .txt]: Save dialog, default filename from timestamp
 - [Delete]: Confirm dialog, then remove transcription and audio file
 
---------------
-
 Dependencies
----------------
+------------
 
 **8 crates.** Pure Rust, no WebView, no npm, no frontend build.
 
 See :doc:`Principles </meta/principles>` (Current Minimal Set section) for the authoritative dependency list with versions.
 
---------------
-
 Security & Privacy
----------------------
+------------------
 
 **Privacy by architecture:** No network code exists in the application. Voice recordings and transcriptions never leave the user’s machine.
 
@@ -501,10 +487,8 @@ Command injection No shell execution, explicit args only
 SQL injection     Parameterized queries
 ================= ======================================
 
---------------
-
 Deployment
--------------
+----------
 
 Air-Gap Support
 ~~~~~~~~~~~~~~~
@@ -602,10 +586,8 @@ AUR             Arch Linux Community maintained (future)
    ├── CHANGELOG.md
    └── SHA256SUMS.txt
 
---------------
-
 Platform Considerations
----------------------------
+-----------------------
 
 Build Requirements
 ~~~~~~~~~~~~~~~~~~
@@ -679,10 +661,8 @@ Linux    ``make``      Optional CUDA/OpenBLAS support
 
 For air-gapped deployment, include pre-compiled whisper.cpp binaries for each target platform.
 
---------------
-
 Localization Strategy
--------------------------
+---------------------
 
 MVP Approach
 ~~~~~~~~~~~~

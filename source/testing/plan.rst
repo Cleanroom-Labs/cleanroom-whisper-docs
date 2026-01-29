@@ -2,14 +2,12 @@ Test Plan
 =========
 
 Introduction
----------------
+------------
 
 This test plan covers MVP requirements (:need_count:`type=='req' and 'whisper' in tags` functional requirements, :need_count:`type=='nfreq' and 'whisper' in tags` non-functional requirements).
 
---------------
-
 Test Strategy
-----------------
+-------------
 
 Test Levels
 ~~~~~~~~~~~
@@ -34,7 +32,7 @@ SQLite engine         Third-party software
 ===================== ====================
 
 Test Automation Approach
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 **MVP:** Manual testing only. Automation deferred until post-MVP stabilization.
 
@@ -79,10 +77,8 @@ Notifications    Platform-specific behavior
    # mock-whisper.sh - Returns predictable output for testing
    echo "This is a test transcription."
 
---------------
-
 Test Cases by Category
--------------------------
+----------------------
 
 Recording Tests
 ~~~~~~~~~~~~~~~
@@ -814,10 +810,8 @@ Non-Functional Tests
 
    Verify optional SQLite encryption for sensitive transcriptions (if implemented)
 
---------------
-
 Test Procedures
-------------------
+---------------
 
 Network Isolation Test (TC-SEC-003)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -871,10 +865,8 @@ Air-Gap Build Test (TC-DEP-002)
 
 **Pass Criteria:** Build completes successfully with no network access.
 
---------------
-
 Pass/Fail Criteria
----------------------
+------------------
 
 - **All Critical tests must pass** before release
 - **All High priority tests must pass** before release

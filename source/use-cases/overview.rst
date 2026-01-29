@@ -6,40 +6,36 @@ Purpose
 
 This document provides an overview of primary use cases for Cleanroom Whisper, an offline audio transcription application designed for privacy-conscious users who need reliable voice-to-text conversion without cloud dependencies.
 
---------------
-
 User Personas
 -------------
 
 Privacy-Conscious Professional
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - **Needs:** Secure transcription without cloud services
 - **Environment:** Corporate, government, or security-sensitive
 - **Priority:** Data privacy, air-gap capability
 
 Productivity Enthusiast
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 - **Needs:** Fast voice-to-text for task capture
 - **Environment:** Personal productivity workflows
 - **Priority:** Speed, convenience, keyboard shortcuts
 
 Accessibility User
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 - **Needs:** Alternative text input method
 - **Environment:** Daily computer use with mobility limitations
 - **Priority:** Reliability, customizable controls, accuracy
 
 Researcher/Interviewer
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 - **Needs:** Transcribe recorded interviews
 - **Environment:** Qualitative research, journalism
 - **Priority:** Accuracy, handle longer audio, export capability
-
---------------
 
 Primary Use Cases
 -----------------
@@ -55,8 +51,6 @@ Primary Use Cases
 +---------------------------------------------+-------------------------------+-------------------------------------------+
 | :doc:`Accessibility <use-case-accessibility>`| User with mobility needs      | Accessible hotkey → dictate → paste       |
 +---------------------------------------------+-------------------------------+-------------------------------------------+
-
---------------
 
 Common Requirements Across All Use Cases
 ----------------------------------------
@@ -74,8 +68,6 @@ Common Requirements Across All Use Cases
 +--------------------------------------+-----------------------------------------------------------+
 | No cloud dependency                  | Data privacy, control, and air-gap compatibility          |
 +--------------------------------------+-----------------------------------------------------------+
-
---------------
 
 Integration Scenarios
 ---------------------
@@ -109,8 +101,6 @@ Cleanroom Whisper can be deployed to air-gapped systems using AirGap Deploy:
 
 **See:** :doc:`airgap-deploy:use-cases/use-case-airgap-whisper`
 
---------------
-
 Out of Scope
 ------------
 
@@ -130,8 +120,6 @@ The following are explicitly NOT supported in MVP:
 | Cloud backup/sync                 | Violates privacy design principle         |
 +-----------------------------------+-------------------------------------------+
 
---------------
-
 Success Metrics
 ---------------
 
@@ -144,8 +132,6 @@ User workflow disruption Minimal (hotkey-driven)
 Privacy violations       Zero (no network calls)
 User errors              < 5% (clear UI, good defaults)
 ======================== ===============================
-
---------------
 
 See Also
 --------
