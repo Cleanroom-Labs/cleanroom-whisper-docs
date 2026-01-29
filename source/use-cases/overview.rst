@@ -139,4 +139,4 @@ See Also
 - :doc:`Requirements (SRS) <../requirements/srs>` - Detailed functional requirements
 - :doc:`Design (SDD) <../design/sdd>` - Architecture and implementation
 - :doc:`Roadmap <../roadmap>` - Implementation roadmap
-- :doc:`Principles </meta/principles>` - Design principles guiding all decisions
+- `Principles <https://cleanroomlabs.dev/docs/meta/principles/>`_ - Design principles guiding all decisions

@@ -47,7 +47,7 @@ html_short_title = 'Cleanroom Whisper'
 html_context = {
     'display_github': True,
     'github_user': 'cleanroom-labs',
-    'github_repo': 'airgap-whisper-docs',
+    'github_repo': 'cleanroom-whisper-docs',
     'github_version': 'main',
     'conf_py_path': '/source/',
 }

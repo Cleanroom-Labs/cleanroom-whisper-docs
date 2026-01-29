@@ -4,7 +4,7 @@ Build a transcription app you want to use. Share it with the world. See what hap
 
 <br>
 
-**Guiding document:** [Principles](/meta/principles)
+**Guiding document:** [Principles](https://cleanroomlabs.dev/docs/meta/principles/)
 
 ## v1.0.0 Release
 
@@ -177,7 +177,7 @@ Build it. Use it. Then improve it.
 
 | Document | Purpose |
 |----------|---------|
-| [Principles](/meta/principles) | Design principles (read first) |
+| [Principles](https://cleanroomlabs.dev/docs/meta/principles/) | Design principles (read first) |
 | [Requirements (SRS)](requirements/srs) | Functional and non-functional requirements |
 | [Design (SDD)](design/sdd) | Architecture and component design |
 | [Test Plan](testing/plan) | Test cases with traceability |
