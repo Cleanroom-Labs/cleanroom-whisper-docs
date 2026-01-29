@@ -1,4 +1,4 @@
-Workflow: Meeting Notes
+Use Case: Meeting Notes
 =======================
 
 **Scenario:** Transcribe verbal discussion during or after a meeting for documentation.

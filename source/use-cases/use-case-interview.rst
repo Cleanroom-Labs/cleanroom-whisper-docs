@@ -1,4 +1,4 @@
-Workflow: Interview Transcription
+Use Case: Interview Transcription
 =================================
 
 **Scenario:** Transcribe recorded interviews for analysis or documentation.

@@ -1,4 +1,4 @@
-Workflow: Quick Voice Memo
+Use Case: Quick Voice Memo
 ==========================
 
 **Scenario:** Capture quick thoughts, reminders, or ideas as text without typing.

@@ -47,13 +47,13 @@ Primary Use Cases
 +---------------------------------------------+-------------------------------+-------------------------------------------+
 | Use Case                                    | Actor                         | Workflow                                  |
 +=============================================+===============================+===========================================+
-| :doc:`Quick Voice Memo <workflow-voice-memo>`| Individual user               | Hotkey → record → transcribe → clipboard  |
+| :doc:`Quick Voice Memo <use-case-voice-memo>`| Individual user               | Hotkey → record → transcribe → clipboard  |
 +---------------------------------------------+-------------------------------+-------------------------------------------+
-| :doc:`Meeting Notes <workflow-meeting-notes>`| Meeting participant           | Record sections → review history → copy   |
+| :doc:`Meeting Notes <use-case-meeting-notes>`| Meeting participant           | Record sections → review history → copy   |
 +---------------------------------------------+-------------------------------+-------------------------------------------+
-| :doc:`Interview <workflow-interview>`        | Researcher/journalist         | Play audio → record → compile transcript  |
+| :doc:`Interview <use-case-interview>`        | Researcher/journalist         | Play audio → record → compile transcript  |
 +---------------------------------------------+-------------------------------+-------------------------------------------+
-| :doc:`Accessibility <workflow-accessibility>`| User with mobility needs      | Accessible hotkey → dictate → paste       |
+| :doc:`Accessibility <use-case-accessibility>`| User with mobility needs      | Accessible hotkey → dictate → paste       |
 +---------------------------------------------+-------------------------------+-------------------------------------------+
 
 --------------
@@ -107,7 +107,7 @@ Cleanroom Whisper can be deployed to air-gapped systems using AirGap Deploy:
 - Transfer via AirGap Transfer if package exceeds USB capacity
 - Deploy and build on isolated system
 
-**See:** :doc:`airgap-deploy:use-cases/workflow-airgap-whisper`
+**See:** :doc:`airgap-deploy:use-cases/use-case-airgap-whisper`
 
 --------------
 

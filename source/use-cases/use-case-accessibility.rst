@@ -1,4 +1,4 @@
-Workflow: Accessibility - Hands-Free Text Input
+Use Case: Accessibility - Hands-Free Text Input
 ================================================
 
 **Scenario:** User with mobility limitations needs to input text without keyboard.
