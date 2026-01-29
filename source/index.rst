@@ -8,7 +8,7 @@ Cleanroom Whisper is an end-user transcription application that runs entirely of
    :caption: Documentation
 
    readme
-   use-cases/overview
+   use-cases/index
    requirements/srs
    design/sdd
    testing/plan

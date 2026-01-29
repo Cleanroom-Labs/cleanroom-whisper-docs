@@ -149,7 +149,7 @@ Platform Support
 License
 -------
 
-Dual-licensed under MIT OR Apache-2.0 (your choice). See `LICENSE.md <LICENSE.md>`__ for details.
+Licensed under AGPL-3.0. Commercial licenses are available for businesses and other organizations. See `LICENSE.md <LICENSE.md>`__ for details.
 
 Documentation
 -------------
