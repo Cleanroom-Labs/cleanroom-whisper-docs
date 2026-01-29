@@ -9,7 +9,7 @@ Cleanroom Whisper API Reference
 Planned Architecture
 --------------------
 
-Based on :doc:`/airgap-whisper/design/sdd`, Cleanroom Whisper will consist of these modules:
+Based on :doc:`../design/sdd`, Cleanroom Whisper will consist of these modules:
 
 Audio Module (``audio``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -22,8 +22,6 @@ Audio Module (``audio``)
 - ``AudioDevice`` - Platform-specific audio device abstraction
 - ``AudioBuffer`` - Circular buffer for audio data
 
-**Implements Requirements:** FR-WHISPER-001, FR-WHISPER-002, FR-WHISPER-003
-
 Whisper Module (``whisper``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -34,8 +32,6 @@ Whisper Module (``whisper``)
 - ``WhisperEngine`` - Wrapper around whisper.cpp binary
 - ``ModelManager`` - Manages available whisper models
 - ``TranscriptionJob`` - Represents a transcription task
-
-**Implements Requirements:** FR-WHISPER-004, FR-WHISPER-005, FR-WHISPER-006
 
 Database Module (``db``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,8 +44,6 @@ Database Module (``db``)
 - ``Transcription`` - Data model for stored transcriptions
 - ``HistoryManager`` - CRUD operations for transcription history
 
-**Implements Requirements:** FR-WHISPER-007, FR-WHISPER-008
-
 Tray Module (``tray``)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -60,8 +54,6 @@ Tray Module (``tray``)
 - ``TrayIcon`` - System tray icon and menu
 - ``HotkeyManager`` - Global hotkey registration
 - ``Settings`` - User configuration management
-
-**Implements Requirements:** FR-WHISPER-009, FR-WHISPER-010, FR-WHISPER-011
 
 Integration with Sphinx
 ------------------------
@@ -161,6 +153,6 @@ Update needflow diagrams to include implementation nodes
 See Also
 --------
 
-- :doc:`/airgap-whisper/requirements/srs` - Requirements this API implements
-- :doc:`/airgap-whisper/design/sdd` - Detailed design specifications
-- :doc:`/airgap-whisper/testing/plan` - Test cases validating this API
+- :doc:`../requirements/srs` - Requirements this API implements
+- :doc:`../design/sdd` - Detailed design specifications
+- :doc:`../testing/plan` - Test cases validating this API
