@@ -72,7 +72,7 @@ Per `Principles <https://cleanroomlabs.dev/docs/meta/principles.html>`_: **5 Rus
 
 ::
 
-   airgap-whisper/
+   cleanroom-whisper/
    ├── src/
    │   ├── main.rs       # Entry point, event loop, tray setup
    │   ├── audio.rs      # Record WAV from microphone
@@ -148,7 +148,7 @@ File Storage
 ::
 
    {APP_DATA_DIR}/
-   ├── airgap-whisper.db   # SQLite database
+   ├── cleanroom-whisper.db   # SQLite database
    ├── audio/              # Audio files
    │   └── {uuid}.wav
    └── temp/               # Recording in progress
@@ -178,7 +178,7 @@ Data Retention Policy
 
 **Transcriptions:** - Retained indefinitely until user deletes - Deletion removes database row and associated audio file (if exists) - No automatic cleanup or archival
 
-**Database:** - Single file, no automatic backup - User responsible for backup (copy ``airgap-whisper.db``) - No size limits enforced (SQLite handles large datasets)
+**Database:** - Single file, no automatic backup - User responsible for backup (copy ``cleanroom-whisper.db``) - No size limits enforced (SQLite handles large datasets)
 
 **Cleanup on delete:** Delete audio file if exists, then delete database row.
 
@@ -569,7 +569,7 @@ Channel         Platform   Notes
 =============== ========== ==========================================
 GitHub Releases All        Primary distribution, free
 Gumroad/Paddle  All        For paid distribution
-Homebrew        macOS      ``brew install airgap-whisper`` (future)
+Homebrew        macOS      ``brew install cleanroom-whisper`` (future)
 AUR             Arch Linux Community maintained (future)
 =============== ========== ==========================================
 
@@ -577,12 +577,12 @@ AUR             Arch Linux Community maintained (future)
 
 ::
 
-   airgap-whisper-v1.0.0/
-   ├── airgap-whisper-v1.0.0-macos-arm64.dmg
-   ├── airgap-whisper-v1.0.0-macos-x64.dmg
-   ├── airgap-whisper-v1.0.0-windows-x64.msi
-   ├── airgap-whisper-v1.0.0-linux-x64.tar.gz
-   ├── airgap-whisper-v1.0.0-linux-x64.deb
+   cleanroom-whisper-v1.0.0/
+   ├── cleanroom-whisper-v1.0.0-macos-arm64.dmg
+   ├── cleanroom-whisper-v1.0.0-macos-x64.dmg
+   ├── cleanroom-whisper-v1.0.0-windows-x64.msi
+   ├── cleanroom-whisper-v1.0.0-linux-x64.tar.gz
+   ├── cleanroom-whisper-v1.0.0-linux-x64.deb
    ├── CHANGELOG.md
    └── SHA256SUMS.txt
 
