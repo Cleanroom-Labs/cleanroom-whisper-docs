@@ -18,19 +18,17 @@ Build a transcription app you want to use. Share it with the world. See what hap
 
 <br>
 
-**Target Date:** June 27, 2026 (MVP Complete)
+**Target:** Suite Milestone 5 (Month 10) — MVP Complete
 
-**Development Schedule:** May 26 - June 27, 2026 (5 weeks)
-
-**Note:** Development begins after AirGap Deploy MVP is complete.
+**Note:** Development begins after AirGap Transfer is complete (Suite Milestone 5).
 
 ## Current Status
 
-**Phase:** Planning Complete
+**Phase:** Preliminary Planning Complete
 
-**Next:** Begin MVP implementation
+**Next:** Finalize plan and begin MVP implementation
 
-All requirements, design, and test specifications are complete. Ready to start Milestone 1.
+Requirements, design, and test specifications need some minor adjustments and a final review.
 
 <br>
 
@@ -52,7 +50,7 @@ All requirements, design, and test specifications are complete. Ready to start M
 
 ### Milestone 1: Skeleton
 
-**Target Date:** May 30, 2026
+**Target:** Suite Milestone 5 (early)
 
 **Goal:** Tray icon appears.
 
@@ -65,7 +63,7 @@ All requirements, design, and test specifications are complete. Ready to start M
 
 ### Milestone 2: Recording
 
-**Target Date:** June 6, 2026
+**Target:** Suite Milestone 5
 
 **Goal:** Record voice to WAV file.
 
@@ -74,12 +72,15 @@ All requirements, design, and test specifications are complete. Ready to start M
 - [ ] Write samples to WAV (16kHz mono)
 - [ ] Left-click tray toggles recording
 - [ ] Tray icon changes when recording (red)
+- [ ] Show recording duration in tray menu
+- [ ] Configurable recording duration limit (default: 120 min)
+- [ ] Audio input device selection in settings
 
 **Done when:** Can record, find WAV file, play in system player.
 
 ### Milestone 3: Transcription
 
-**Target Date:** June 13, 2026
+**Target:** Suite Milestone 5
 
 **Goal:** Get text from whisper.cpp.
 
@@ -90,12 +91,13 @@ All requirements, design, and test specifications are complete. Ready to start M
 - [ ] Invoke whisper.cpp with configured paths
 - [ ] Capture and parse stdout for transcription text
 - [ ] Show notification with result preview
+- [ ] Handle transcription errors with system notification
 
 **Done when:** Record → notification shows text.
 
 ### Milestone 4: Persistence
 
-**Target Date:** June 16, 2026
+**Target:** Suite Milestone 5
 
 **Goal:** Save transcriptions, survive restart.
 
@@ -105,12 +107,14 @@ All requirements, design, and test specifications are complete. Ready to start M
 - [ ] Load recent transcriptions into tray menu
 - [ ] Click menu item copies text to clipboard
 - [ ] "View History" opens native dialog with full list
+- [ ] Delete transcription from history dialog
+- [ ] Export transcription as .txt file from history dialog
 
 **Done when:** Close app, reopen, history still there.
 
 ### Milestone 5: Hotkeys
 
-**Target Date:** June 20, 2026
+**Target:** Suite Milestone 5
 
 **Goal:** Control without touching mouse.
 
@@ -123,7 +127,7 @@ All requirements, design, and test specifications are complete. Ready to start M
 
 ### Milestone 6: Polish
 
-**Target Date:** June 27, 2026 (MVP Complete)
+**Target:** Suite Milestone 5 (Month 10) — MVP Complete
 
 **Goal:** Comfortable daily use.
 
@@ -133,8 +137,51 @@ All requirements, design, and test specifications are complete. Ready to start M
 - [ ] Show timestamp and preview on menu items
 - [ ] Tray icon shows busy state during transcription
 - [ ] Settings persist between runs
+- [ ] Sanitize file paths (reject `..`)
+- [ ] Use parameterized database queries
+- [ ] Verify no network calls under any circumstance
+- [ ] Offline build dependencies (cargo vendor)
+- [ ] Single-directory deployment support
 
 **Done when:** Use it for a week without frustration.
+
+### Milestone 7: Testing & Documentation
+
+**Target:** Suite Milestone 5 (Month 10) — MVP Complete
+
+**Goal:** Comprehensive testing and documentation
+
+**Unit Tests:**
+
+- [ ] Audio recording (device selection, WAV format)
+- [ ] Transcription (whisper.cpp invocation, output parsing)
+- [ ] Database (CRUD operations, transactions, parameterized queries)
+- [ ] Settings (persistence, validation, hotkey configuration)
+- [ ] Security (path sanitization, no network calls)
+
+**Integration Tests:**
+
+- [ ] End-to-end: record → transcribe → save → retrieve
+- [ ] Multi-platform testing (Linux, macOS, Windows via CI)
+- [ ] Error scenarios (missing whisper binary, permission denied, disk full)
+- [ ] History management (large databases, deletion, export)
+
+**Documentation:**
+
+- [ ] API documentation (rustdoc)
+- [ ] User guide — Getting started, configuration, usage
+- [ ] Developer guide — Architecture, contributing
+- [ ] Deployment guide — Air-gap installation with AirGap Deploy
+
+**CI/CD:**
+
+- [ ] Run tests on Linux, macOS, Windows
+- [ ] Clippy lints (deny warnings)
+- [ ] rustfmt checks
+- [ ] cargo-deny license checks
+- [ ] Release automation (GitHub releases)
+
+**Done when:** 80%+ code coverage, complete documentation, CI/CD pipeline.
 
 ## Definition of Done
 
@@ -146,32 +193,21 @@ MVP is complete when:
 - [ ] Recent transcriptions visible in tray menu
 - [ ] Click menu item → text copied to clipboard
 - [ ] Quit and reopen → history preserved
+- [ ] 80%+ code coverage
+- [ ] Zero clippy warnings
+- [ ] All dependency licenses compatible with AGPL-3.0
+- [ ] Documentation covers all use cases
 - [ ] Use daily for one week without major issues
 
 ## What's NOT in MVP
 
 Defer all of this until after shipping:
 
-- Tests
-- CI/CD
-- Documentation
 - Error recovery beyond "show notification"
 - Accessibility
 - Dark mode toggle (follow system is fine)
 - Performance optimization
 - Code signing (needed for distribution, not development)
-
-Build it. Use it. Then improve it.
-
-## After MVP
-
-**Personal Use** — Use it, iterate
-
-**Share** — Post to HN, Reddit
-
-**Sell** — $99 Apple Dev, Gumroad
-
-**Grow** — LLC if revenue exists
 
 ## Key Documents
 
@@ -182,8 +218,16 @@ Build it. Use it. Then improve it.
 | [Design (SDD)](design/sdd) | Architecture and component design |
 | [Test Plan](testing/plan) | Test cases with traceability |
 
+## See Also
+
+- [Meta-Architecture](https://cleanroomlabs.dev/docs/meta/meta-architecture.html) — How Cleanroom Whisper fits in the AirGap suite
+- [Specification Overview](https://cleanroomlabs.dev/docs/meta/specification-overview.html) — Project statistics and traceability overview
+- [AirGap Deploy](https://cleanroomlabs.dev/docs/airgap-deploy/readme.html) — Deployment packaging tool
+- [AirGap Transfer](https://cleanroomlabs.dev/docs/airgap-transfer/readme.html) — Large file transfer companion tool
+
 ## Progress Log
 
 | Date | Activity |
 |------|----------|
 | 2026-01-28 | Created specification and documentation |
+| 2026-01-31 | Updated roadmap to align with 6-milestone release plan |
