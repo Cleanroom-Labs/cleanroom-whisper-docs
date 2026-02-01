@@ -41,8 +41,8 @@ needs_build_json = True
 
 # Update intersphinx mapping with cross-project references
 intersphinx_mapping.update({
-    'airgap-deploy': ('https://cleanroomlabs.dev/docs/airgap-deploy/', None),
-    'airgap-transfer': ('https://cleanroomlabs.dev/docs/airgap-transfer/', None),
+    'airgap-deploy': ('https://cleanroomlabs.dev/docs/deploy/', None),
+    'airgap-transfer': ('https://cleanroomlabs.dev/docs/transfer/', None),
 })
 
 # -- HTML output options -----------------------------------------------------

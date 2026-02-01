@@ -222,8 +222,8 @@ Defer all of this until after shipping:
 
 - [Meta-Architecture](https://cleanroomlabs.dev/docs/meta/meta-architecture.html) — How Cleanroom Whisper fits in the AirGap suite
 - [Specification Overview](https://cleanroomlabs.dev/docs/meta/specification-overview.html) — Project statistics and traceability overview
-- [AirGap Deploy](https://cleanroomlabs.dev/docs/airgap-deploy/readme.html) — Deployment packaging tool
-- [AirGap Transfer](https://cleanroomlabs.dev/docs/airgap-transfer/readme.html) — Large file transfer companion tool
+- [AirGap Deploy](https://cleanroomlabs.dev/docs/deploy/readme.html) — Deployment packaging tool
+- [AirGap Transfer](https://cleanroomlabs.dev/docs/transfer/readme.html) — Large file transfer companion tool
 
 ## Progress Log
 
