@@ -32,7 +32,7 @@ SQLite engine         Third-party software
 ===================== ====================
 
 Test Automation Approach
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **MVP:** Manual testing only. Automation deferred until post-MVP stabilization.
 
