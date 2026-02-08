@@ -23,19 +23,9 @@ author = 'Cleanroom Labs'
 version = get_docs_version()
 release = get_docs_version()
 
-# -- Extensions configuration ------------------------------------------------
-
-# Extend shared extensions with project-specific ones
-extensions.extend([
-    'sphinx.ext.viewcode',
-    'sphinx.ext.graphviz',
-    'sphinx.ext.todo',
-])
-
 # -- sphinx-needs configuration ----------------------------------------------
 
 needs_types = make_needs_types('WHISPER-')
-needs_build_json = True
 
 # -- Intersphinx configuration -----------------------------------------------
 
