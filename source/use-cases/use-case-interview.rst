@@ -11,6 +11,7 @@ Use Case: Interview Transcription
    :id: UC-WHISPER-003
    :status: approved
    :tags: whisper, interview, long-form
+   :release: v1.0
 
    Transcribe recorded interviews for analysis or documentation, handling longer audio segments.
 

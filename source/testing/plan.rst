@@ -99,6 +99,7 @@ Recording Tests
    :tags: whisper, recording, hotkey
    :tests: FR-WHISPER-001
    :priority: high
+   :release: v1.0
 
    **Steps:**
 
@@ -114,6 +115,7 @@ Recording Tests
    :tags: whisper, recording, hotkey
    :tests: FR-WHISPER-001
    :priority: high
+   :release: v1.0
 
    **Steps:**
 
@@ -129,6 +131,7 @@ Recording Tests
    :tags: whisper, recording, ui
    :tests: FR-WHISPER-002
    :priority: high
+   :release: v1.0
 
    **Steps:**
 
@@ -143,6 +146,7 @@ Recording Tests
    :tags: whisper, recording, audio
    :tests: FR-WHISPER-003
    :priority: high
+   :release: v1.0
 
    **Steps:**
 
@@ -158,6 +162,7 @@ Recording Tests
    :tags: whisper, recording, audio
    :tests: FR-WHISPER-004
    :priority: high
+   :release: v1.0
 
    **Steps:**
 
@@ -183,6 +188,7 @@ Transcription Tests
    :tags: whisper, transcription
    :tests: FR-WHISPER-008
    :priority: high
+   :release: v1.0
 
    **Steps:**
 
@@ -197,6 +203,7 @@ Transcription Tests
    :tags: whisper, transcription
    :tests: FR-WHISPER-009
    :priority: high
+   :release: v1.0
 
    **Steps:**
 
@@ -211,6 +218,7 @@ Transcription Tests
    :tags: whisper, transcription, ui
    :tests: FR-WHISPER-010
    :priority: high
+   :release: v1.0
 
    **Steps:**
 
@@ -225,6 +233,7 @@ Transcription Tests
    :tags: whisper, transcription, ui
    :tests: FR-WHISPER-011
    :priority: medium
+   :release: v1.0
 
    **Steps:**
 
@@ -239,6 +248,7 @@ Transcription Tests
    :tags: whisper, transcription, error
    :tests: FR-WHISPER-012
    :priority: high
+   :release: v1.0
 
    **Steps:**
 
@@ -253,6 +263,7 @@ Transcription Tests
    :tags: whisper, recording, ui
    :tests: FR-WHISPER-005
    :priority: medium
+   :release: v1.0
 
    Verify tray menu displays recording duration while active
 
@@ -262,6 +273,7 @@ Transcription Tests
    :tags: whisper, recording
    :tests: FR-WHISPER-006
    :priority: medium
+   :release: v1.0
 
    Verify recording stops at configured duration limit
 
@@ -271,6 +283,7 @@ Transcription Tests
    :tags: whisper, recording, audio
    :tests: FR-WHISPER-007
    :priority: medium
+   :release: v1.0
 
    Verify custom audio input device selection works correctly
 
@@ -291,6 +304,7 @@ History Tests
    :tags: whisper, history, database
    :tests: FR-WHISPER-013
    :priority: high
+   :release: v1.0
 
    Verify all transcriptions are saved to SQLite database
 
@@ -300,6 +314,7 @@ History Tests
    :tags: whisper, history, ui
    :tests: FR-WHISPER-014
    :priority: high
+   :release: v1.0
 
    Verify tray menu displays recent transcriptions (newest first)
 
@@ -309,6 +324,7 @@ History Tests
    :tags: whisper, history, ui
    :tests: FR-WHISPER-015
    :priority: medium
+   :release: v1.0
 
    Verify menu items display timestamp and text preview
 
@@ -318,6 +334,7 @@ History Tests
    :tags: whisper, history, clipboard
    :tests: FR-WHISPER-016
    :priority: high
+   :release: v1.0
 
    Verify clicking menu item copies full transcription to clipboard
 
@@ -327,6 +344,7 @@ History Tests
    :tags: whisper, history, ui
    :tests: FR-WHISPER-017
    :priority: medium
+   :release: v1.0
 
    Verify "View History" opens native dialog with full list
 
@@ -336,6 +354,7 @@ History Tests
    :tags: whisper, history
    :tests: FR-WHISPER-018
    :priority: medium
+   :release: v1.0
 
    Verify transcription can be deleted from history dialog
 
@@ -356,6 +375,7 @@ Output Tests
    :tags: whisper, output, hotkey, clipboard
    :tests: FR-WHISPER-019
    :priority: high
+   :release: v1.0
 
    Verify global hotkey copies most recent transcription to clipboard
 
@@ -365,6 +385,7 @@ Output Tests
    :tags: whisper, output, file
    :tests: FR-WHISPER-020
    :priority: medium
+   :release: v1.0
 
    Verify transcription can be exported as .txt file from history dialog
 
@@ -385,6 +406,7 @@ Settings Tests
    :tags: whisper, settings, ui
    :tests: FR-WHISPER-021
    :priority: high
+   :release: v1.0
 
    Verify "Settings" menu item opens native settings dialog
 
@@ -394,6 +416,7 @@ Settings Tests
    :tags: whisper, settings, configuration
    :tests: FR-WHISPER-022
    :priority: high
+   :release: v1.0
 
    Verify whisper.cpp binary path can be configured with file picker
 
@@ -403,6 +426,7 @@ Settings Tests
    :tags: whisper, settings, configuration
    :tests: FR-WHISPER-023
    :priority: high
+   :release: v1.0
 
    Verify model file path can be configured with file picker
 
@@ -412,6 +436,7 @@ Settings Tests
    :tags: whisper, settings, validation
    :tests: FR-WHISPER-024
    :priority: high
+   :release: v1.0
 
    Verify paths are validated to exist before save
 
@@ -421,6 +446,7 @@ Settings Tests
    :tags: whisper, settings, hotkey
    :tests: FR-WHISPER-025
    :priority: high
+   :release: v1.0
 
    Verify global hotkeys can be configured with conflict detection
 
@@ -430,6 +456,7 @@ Settings Tests
    :tags: whisper, settings, ux
    :tests: FR-WHISPER-026
    :priority: medium
+   :release: v1.0
 
    Verify first-run prompt appears when paths not configured
 
@@ -450,6 +477,7 @@ System Tray Tests
    :tags: whisper, tray, ui
    :tests: FR-WHISPER-027
    :priority: high
+   :release: v1.0
 
    Verify tray icon shows app status (idle/recording/transcribing)
 
@@ -459,6 +487,7 @@ System Tray Tests
    :tags: whisper, tray, ui
    :tests: FR-WHISPER-028
    :priority: high
+   :release: v1.0
 
    Verify left-click on tray icon toggles recording
 
@@ -468,6 +497,7 @@ System Tray Tests
    :tags: whisper, tray, ui
    :tests: FR-WHISPER-029
    :priority: high
+   :release: v1.0
 
    Verify right-click shows menu with Recent items, Settings, Quit
 
@@ -477,6 +507,7 @@ System Tray Tests
    :tags: whisper, tray, ui
    :tests: FR-WHISPER-030
    :priority: high
+   :release: v1.0
 
    Verify app starts minimized to tray (no main window)
 
@@ -497,6 +528,7 @@ Security Tests
    :tags: whisper, security
    :tests: FR-WHISPER-031
    :priority: critical
+   :release: v1.0
 
    Verify file paths with ``..`` are rejected
 
@@ -506,6 +538,7 @@ Security Tests
    :tags: whisper, security, database
    :tests: FR-WHISPER-032
    :priority: critical
+   :release: v1.0
 
    Verify parameterized queries prevent SQL injection
 
@@ -515,6 +548,7 @@ Security Tests
    :tags: whisper, security, privacy
    :tests: FR-WHISPER-033
    :priority: critical
+   :release: v1.0
 
    Verify no network calls using firewall monitoring
 
@@ -524,6 +558,7 @@ Security Tests
    :tags: whisper, security, privacy
    :tests: FR-WHISPER-033
    :priority: critical
+   :release: v1.0
 
    Verify no network calls using packet capture analysis
 
@@ -533,6 +568,7 @@ Security Tests
    :tags: whisper, security, privacy, offline
    :tests: FR-WHISPER-033, NFR-WHISPER-004
    :priority: critical
+   :release: v1.0
 
    Verify app is 100% functional offline (airplane mode test)
 
@@ -553,6 +589,7 @@ Deployment Tests
    :tags: whisper, deployment
    :tests: FR-WHISPER-034
    :priority: high
+   :release: v1.0
 
    Verify cargo vendor directory is present for offline build
 
@@ -562,6 +599,7 @@ Deployment Tests
    :tags: whisper, deployment
    :tests: FR-WHISPER-035
    :priority: critical
+   :release: v1.0
 
    Verify build process works without internet after initial setup
 
@@ -571,6 +609,7 @@ Deployment Tests
    :tags: whisper, deployment
    :tests: FR-WHISPER-036
    :priority: medium
+   :release: v1.0
 
    Verify single-directory deployment works (app + whisper.cpp + model)
 
@@ -591,6 +630,7 @@ Non-Functional Tests
    :tags: whisper, performance
    :tests: NFR-WHISPER-001
    :priority: high
+   :release: v1.0
 
    Verify app launches in < 2 seconds
 
@@ -600,6 +640,7 @@ Non-Functional Tests
    :tags: whisper, performance
    :tests: NFR-WHISPER-002
    :priority: high
+   :release: v1.0
 
    Verify memory usage < 100 MB (excluding whisper.cpp)
 
@@ -609,6 +650,7 @@ Non-Functional Tests
    :tags: whisper, deployment, offline
    :tests: NFR-WHISPER-005
    :priority: high
+   :release: v1.0
 
    Verify build succeeds on air-gapped system with no internet
 
@@ -618,6 +660,7 @@ Non-Functional Tests
    :tags: whisper, ui, accessibility
    :tests: NFR-WHISPER-006
    :priority: medium
+   :release: v1.0
 
    Verify app follows system theme (dark/light)
 
@@ -627,6 +670,7 @@ Non-Functional Tests
    :tags: whisper, privacy, security
    :tests: NFR-WHISPER-003
    :priority: critical
+   :release: v1.0
 
    Verify no network calls under any circumstance (monitor with network sniffer)
 
@@ -636,6 +680,7 @@ Non-Functional Tests
    :tags: whisper, offline
    :tests: NFR-WHISPER-004
    :priority: critical
+   :release: v1.0
 
    Verify 100% functionality with network disconnected
 
@@ -645,6 +690,7 @@ Non-Functional Tests
    :tags: whisper, performance, transcription
    :tests: NFR-WHISPER-007
    :priority: medium
+   :release: v1.0
 
    Verify transcription completes within 2x recording duration
 
@@ -654,6 +700,7 @@ Non-Functional Tests
    :tags: whisper, reliability, audio
    :tests: NFR-WHISPER-008
    :priority: high
+   :release: v1.0
 
    Verify WAV file integrity verified before transcription
 
@@ -663,6 +710,7 @@ Non-Functional Tests
    :tags: whisper, reliability, database
    :tests: NFR-WHISPER-009
    :priority: high
+   :release: v1.0
 
    Verify database operations use transactions preventing data loss
 
@@ -672,6 +720,7 @@ Non-Functional Tests
    :tags: whisper, reliability, error-handling
    :tests: NFR-WHISPER-010
    :priority: high
+   :release: v1.0
 
    Verify whisper.cpp crashes handled gracefully without audio loss
 
@@ -681,6 +730,7 @@ Non-Functional Tests
    :tags: whisper, reliability, hotkeys
    :tests: NFR-WHISPER-011
    :priority: medium
+   :release: v1.0
 
    Verify detection and recovery from hotkey registration failures
 
@@ -690,6 +740,7 @@ Non-Functional Tests
    :tags: whisper, usability, notifications
    :tests: NFR-WHISPER-012
    :priority: high
+   :release: v1.0
 
    Verify notifications include clear status and transcription preview
 
@@ -699,6 +750,7 @@ Non-Functional Tests
    :tags: whisper, usability, tray
    :tests: NFR-WHISPER-013
    :priority: high
+   :release: v1.0
 
    Verify tray icon clearly indicates state (idle/recording/transcribing)
 
@@ -708,6 +760,7 @@ Non-Functional Tests
    :tags: whisper, usability, settings
    :tests: NFR-WHISPER-014
    :priority: medium
+   :release: v1.0
 
    Verify settings dialog provides clear labels and validation feedback
 
@@ -717,6 +770,7 @@ Non-Functional Tests
    :tags: whisper, usability, setup
    :tests: NFR-WHISPER-015
    :priority: medium
+   :release: v1.0
 
    Verify first-time users guided to configure whisper.cpp path
 
@@ -726,6 +780,7 @@ Non-Functional Tests
    :tags: whisper, maintainability, testing
    :tests: NFR-WHISPER-016
    :priority: high
+   :release: v1.0
 
    Verify codebase achieves ≥80% test coverage via cargo tarpaulin
 
@@ -735,6 +790,7 @@ Non-Functional Tests
    :tags: whisper, maintainability, documentation
    :tests: NFR-WHISPER-017
    :priority: high
+   :release: v1.0
 
    Verify all public APIs have rustdoc documentation
 
@@ -744,6 +800,7 @@ Non-Functional Tests
    :tags: whisper, maintainability, code-quality
    :tests: NFR-WHISPER-018
    :priority: high
+   :release: v1.0
 
    Verify cargo clippy passes with zero warnings
 
@@ -753,6 +810,7 @@ Non-Functional Tests
    :tags: whisper, maintainability, code-quality
    :tests: NFR-WHISPER-019
    :priority: high
+   :release: v1.0
 
    Verify code formatted with rustfmt (cargo fmt --check)
 
@@ -762,6 +820,7 @@ Non-Functional Tests
    :tags: whisper, portability, tray
    :tests: NFR-WHISPER-020
    :priority: high
+   :release: v1.0
 
    Verify native tray icons on macOS, Windows, Linux with GNOME AppIndicator
 
@@ -771,6 +830,7 @@ Non-Functional Tests
    :tags: whisper, portability, audio
    :tests: NFR-WHISPER-021
    :priority: high
+   :release: v1.0
 
    Verify compatibility with standard audio input devices across platforms
 
@@ -780,6 +840,7 @@ Non-Functional Tests
    :tags: whisper, scalability, database
    :tests: NFR-WHISPER-022
    :priority: medium
+   :release: v1.0
 
    Verify performance with 10,000+ transcriptions without degradation
 
@@ -789,6 +850,7 @@ Non-Functional Tests
    :tags: whisper, scalability, audio
    :tests: NFR-WHISPER-023
    :priority: medium
+   :release: v1.0
 
    Verify support for audio recordings up to 120 minutes
 
@@ -798,6 +860,7 @@ Non-Functional Tests
    :tags: whisper, scalability, transcription
    :tests: NFR-WHISPER-024
    :priority: medium
+   :release: v1.0
 
    Verify handling of transcriptions with 50,000+ characters
 
@@ -807,6 +870,7 @@ Non-Functional Tests
    :tags: whisper, security, database
    :tests: NFR-WHISPER-025
    :priority: low
+   :release: v1.0
 
    Verify optional SQLite encryption for sensitive transcriptions (if implemented)
 

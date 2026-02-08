@@ -94,6 +94,7 @@ Recording
    :status: approved
    :tags: whisper, recording, hotkey
    :priority: must
+   :release: v1.0
 
    Global hotkey toggles recording (start/stop)
 
@@ -102,6 +103,7 @@ Recording
    :status: approved
    :tags: whisper, recording, ui
    :priority: must
+   :release: v1.0
 
    Tray icon changes color/state when recording
 
@@ -110,6 +112,7 @@ Recording
    :status: approved
    :tags: whisper, recording, audio
    :priority: must
+   :release: v1.0
 
    Audio captured from system default microphone
 
@@ -118,6 +121,7 @@ Recording
    :status: approved
    :tags: whisper, recording, audio
    :priority: must
+   :release: v1.0
 
    Audio saved as WAV (16kHz mono)
 
@@ -126,6 +130,7 @@ Recording
    :status: approved
    :tags: whisper, recording, ui
    :priority: should
+   :release: v1.0
 
    Tray menu shows recording duration while active
 
@@ -134,6 +139,7 @@ Recording
    :status: approved
    :tags: whisper, recording
    :priority: should
+   :release: v1.0
 
    Configurable recording duration limit (default: 120 min)
 
@@ -142,6 +148,7 @@ Recording
    :status: approved
    :tags: whisper, recording, audio
    :priority: should
+   :release: v1.0
 
    Audio input device selection in settings
 
@@ -161,6 +168,7 @@ Transcription
    :status: approved
    :tags: whisper, transcription
    :priority: must
+   :release: v1.0
 
    On stop, invoke whisper.cpp with configured model
 
@@ -169,6 +177,7 @@ Transcription
    :status: approved
    :tags: whisper, transcription
    :priority: must
+   :release: v1.0
 
    Parse whisper.cpp stdout for text
 
@@ -177,6 +186,7 @@ Transcription
    :status: approved
    :tags: whisper, transcription, ui
    :priority: must
+   :release: v1.0
 
    Show notification with transcription preview on completion
 
@@ -185,6 +195,7 @@ Transcription
    :status: approved
    :tags: whisper, transcription, ui
    :priority: must
+   :release: v1.0
 
    Tray icon indicates transcription in progress
 
@@ -193,6 +204,7 @@ Transcription
    :status: approved
    :tags: whisper, transcription, error
    :priority: must
+   :release: v1.0
 
    Handle transcription errors with system notification
 
@@ -212,6 +224,7 @@ History
    :status: approved
    :tags: whisper, history, database
    :priority: must
+   :release: v1.0
 
    Save all transcriptions to SQLite
 
@@ -220,6 +233,7 @@ History
    :status: approved
    :tags: whisper, history, ui
    :priority: must
+   :release: v1.0
 
    Tray menu shows recent transcriptions (newest first)
 
@@ -228,6 +242,7 @@ History
    :status: approved
    :tags: whisper, history, ui
    :priority: must
+   :release: v1.0
 
    Menu items show: timestamp and text preview
 
@@ -236,6 +251,7 @@ History
    :status: approved
    :tags: whisper, history, clipboard
    :priority: must
+   :release: v1.0
 
    Click menu item copies full transcription to clipboard
 
@@ -244,6 +260,7 @@ History
    :status: approved
    :tags: whisper, history, ui
    :priority: should
+   :release: v1.0
 
    "View History" opens native dialog with full list
 
@@ -252,6 +269,7 @@ History
    :status: approved
    :tags: whisper, history
    :priority: should
+   :release: v1.0
 
    Delete transcription from history dialog
 
@@ -271,6 +289,7 @@ Output
    :status: approved
    :tags: whisper, output, hotkey, clipboard
    :priority: must
+   :release: v1.0
 
    Global hotkey copies most recent transcription
 
@@ -279,6 +298,7 @@ Output
    :status: approved
    :tags: whisper, output, file
    :priority: should
+   :release: v1.0
 
    Export transcription as .txt file from history dialog
 
@@ -298,6 +318,7 @@ Settings
    :status: approved
    :tags: whisper, settings, ui
    :priority: must
+   :release: v1.0
 
    "Settings" menu item opens native settings dialog
 
@@ -306,6 +327,7 @@ Settings
    :status: approved
    :tags: whisper, settings, configuration
    :priority: must
+   :release: v1.0
 
    Configure whisper.cpp binary path with file picker
 
@@ -314,6 +336,7 @@ Settings
    :status: approved
    :tags: whisper, settings, configuration
    :priority: must
+   :release: v1.0
 
    Configure model file path with file picker
 
@@ -322,6 +345,7 @@ Settings
    :status: approved
    :tags: whisper, settings, validation
    :priority: must
+   :release: v1.0
 
    Validate paths exist before save
 
@@ -330,6 +354,7 @@ Settings
    :status: approved
    :tags: whisper, settings, hotkey
    :priority: must
+   :release: v1.0
 
    Configure global hotkeys with conflict detection
 
@@ -338,6 +363,7 @@ Settings
    :status: approved
    :tags: whisper, settings, ux
    :priority: should
+   :release: v1.0
 
    First-run prompt when paths not configured
 
@@ -357,6 +383,7 @@ System Tray
    :status: approved
    :tags: whisper, tray, ui
    :priority: must
+   :release: v1.0
 
    Tray icon shows app status (idle/recording/transcribing)
 
@@ -365,6 +392,7 @@ System Tray
    :status: approved
    :tags: whisper, tray, ui
    :priority: must
+   :release: v1.0
 
    Left-click tray icon toggles recording
 
@@ -373,6 +401,7 @@ System Tray
    :status: approved
    :tags: whisper, tray, ui
    :priority: must
+   :release: v1.0
 
    Right-click shows menu: Recent items, Settings, Quit
 
@@ -381,6 +410,7 @@ System Tray
    :status: approved
    :tags: whisper, tray, ui
    :priority: must
+   :release: v1.0
 
    App starts minimized to tray (no main window)
 
@@ -400,6 +430,7 @@ Security
    :status: approved
    :tags: whisper, security
    :priority: must
+   :release: v1.0
 
    Sanitize file paths (reject `..`)
 
@@ -408,6 +439,7 @@ Security
    :status: approved
    :tags: whisper, security, database
    :priority: must
+   :release: v1.0
 
    Use parameterized database queries
 
@@ -416,6 +448,7 @@ Security
    :status: approved
    :tags: whisper, security, privacy
    :priority: must
+   :release: v1.0
 
    No network calls under any circumstance
 
@@ -435,6 +468,7 @@ Deployment
    :status: approved
    :tags: whisper, deployment
    :priority: must
+   :release: v1.0
 
    All dependencies available for offline build
 
@@ -443,6 +477,7 @@ Deployment
    :status: approved
    :tags: whisper, deployment
    :priority: must
+   :release: v1.0
 
    Build process works without internet after initial setup
 
@@ -451,6 +486,7 @@ Deployment
    :status: approved
    :tags: whisper, deployment
    :priority: should
+   :release: v1.0
 
    Single-directory deployment (app + whisper.cpp + model)
 
@@ -473,6 +509,7 @@ Performance
    :status: approved
    :tags: whisper, performance
    :priority: must
+   :release: v1.0
 
    App launch time < 2 seconds
 
@@ -481,6 +518,7 @@ Performance
    :status: approved
    :tags: whisper, performance
    :priority: must
+   :release: v1.0
 
    Memory footprint < 100 MB (excluding whisper.cpp)
 
@@ -489,6 +527,7 @@ Performance
    :status: approved
    :tags: whisper, performance, transcription
    :priority: should
+   :release: v1.0
 
    Transcription completion time SHALL be within 2x the recording duration
 
@@ -500,6 +539,7 @@ Reliability
    :status: approved
    :tags: whisper, reliability, audio
    :priority: must
+   :release: v1.0
 
    The system SHALL verify WAV file integrity before transcription
 
@@ -508,6 +548,7 @@ Reliability
    :status: approved
    :tags: whisper, reliability, database
    :priority: must
+   :release: v1.0
 
    Database operations SHALL use transactions to prevent data loss
 
@@ -516,6 +557,7 @@ Reliability
    :status: approved
    :tags: whisper, reliability, error-handling
    :priority: must
+   :release: v1.0
 
    The system SHALL handle whisper.cpp crashes gracefully without losing audio
 
@@ -524,6 +566,7 @@ Reliability
    :status: approved
    :tags: whisper, reliability, hotkeys
    :priority: should
+   :release: v1.0
 
    The system SHALL detect and recover from hotkey registration failures
 
@@ -535,6 +578,7 @@ Usability
    :status: approved
    :tags: whisper, ui, accessibility
    :priority: should
+   :release: v1.0
 
    Follow system theme (dark/light)
 
@@ -543,6 +587,7 @@ Usability
    :status: approved
    :tags: whisper, usability, notifications
    :priority: must
+   :release: v1.0
 
    System notifications SHALL include clear status and transcription preview
 
@@ -551,6 +596,7 @@ Usability
    :status: approved
    :tags: whisper, usability, tray
    :priority: must
+   :release: v1.0
 
    Tray icon SHALL clearly indicate app state (idle/recording/transcribing)
 
@@ -559,6 +605,7 @@ Usability
    :status: approved
    :tags: whisper, usability, settings
    :priority: should
+   :release: v1.0
 
    Settings dialog SHALL provide clear labels and validation feedback
 
@@ -567,6 +614,7 @@ Usability
    :status: approved
    :tags: whisper, usability, setup
    :priority: should
+   :release: v1.0
 
    First-time users SHALL be guided to configure whisper.cpp path via clear prompts
 
@@ -578,6 +626,7 @@ Maintainability
    :status: approved
    :tags: whisper, maintainability, testing
    :priority: must
+   :release: v1.0
 
    The codebase SHALL achieve at least 80% test coverage
 
@@ -586,6 +635,7 @@ Maintainability
    :status: approved
    :tags: whisper, maintainability, documentation
    :priority: must
+   :release: v1.0
 
    All public APIs SHALL have rustdoc documentation
 
@@ -594,6 +644,7 @@ Maintainability
    :status: approved
    :tags: whisper, maintainability, code-quality
    :priority: must
+   :release: v1.0
 
    The code SHALL pass cargo clippy with zero warnings
 
@@ -602,6 +653,7 @@ Maintainability
    :status: approved
    :tags: whisper, maintainability, code-quality
    :priority: must
+   :release: v1.0
 
    The code SHALL be formatted with rustfmt
 
@@ -613,6 +665,7 @@ Portability
    :status: approved
    :tags: whisper, portability, tray
    :priority: must
+   :release: v1.0
 
    The system SHALL support native tray icons on macOS, Windows, Linux (GNOME with AppIndicator)
 
@@ -621,6 +674,7 @@ Portability
    :status: approved
    :tags: whisper, portability, audio
    :priority: must
+   :release: v1.0
 
    The system SHALL work with standard audio input devices across all platforms
 
@@ -632,6 +686,7 @@ Scalability
    :status: approved
    :tags: whisper, scalability, database
    :priority: should
+   :release: v1.0
 
    The system SHALL handle databases with 10,000+ transcriptions without performance degradation
 
@@ -640,6 +695,7 @@ Scalability
    :status: approved
    :tags: whisper, scalability, audio
    :priority: should
+   :release: v1.0
 
    The system SHALL support audio recordings up to 120 minutes
 
@@ -648,6 +704,7 @@ Scalability
    :status: approved
    :tags: whisper, scalability, transcription
    :priority: should
+   :release: v1.0
 
    The system SHALL handle transcriptions with 50,000+ characters
 
@@ -659,6 +716,7 @@ Security & Privacy
    :status: approved
    :tags: whisper, privacy, security
    :priority: must
+   :release: v1.0
 
    All data stays on user's machine; no network calls, no telemetry
 
@@ -667,6 +725,7 @@ Security & Privacy
    :status: approved
    :tags: whisper, security, database
    :priority: could
+   :release: v1.0
 
    The system COULD support optional SQLite encryption for sensitive transcriptions
 
@@ -678,6 +737,7 @@ Deployment
    :status: approved
    :tags: whisper, offline
    :priority: must
+   :release: v1.0
 
    100% functional offline
 
@@ -686,6 +746,7 @@ Deployment
    :status: approved
    :tags: whisper, deployment, offline
    :priority: must
+   :release: v1.0
 
    Build and run on systems with no internet access
 

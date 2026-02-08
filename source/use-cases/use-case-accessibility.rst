@@ -11,6 +11,7 @@ Use Case: Accessibility - Hands-Free Text Input
    :id: UC-WHISPER-004
    :status: approved
    :tags: whisper, accessibility, hands-free
+   :release: v1.0
 
    User with mobility limitations needs to input text without keyboard using customizable hotkeys.
 
