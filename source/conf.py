@@ -18,7 +18,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Project information -----------------------------------------------------
 
 project = 'Cleanroom Whisper'
-copyright = '2024, Cleanroom Labs'
+copyright = '2026, Cleanroom Labs'
 author = 'Cleanroom Labs'
 version = get_docs_version()
 release = get_docs_version()

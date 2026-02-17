@@ -11,6 +11,7 @@ Use Case: Meeting Notes
    :id: UC-WHISPER-002
    :status: approved
    :tags: whisper, meeting-notes, history
+   :links: FR-WHISPER-001; FR-WHISPER-003; FR-WHISPER-008; FR-WHISPER-013; FR-WHISPER-014; FR-WHISPER-016
    :release: v1.0
 
    Transcribe verbal discussion during or after a meeting for documentation, with history access for review.

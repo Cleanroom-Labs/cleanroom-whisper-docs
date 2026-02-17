@@ -39,7 +39,7 @@ Requirements, design, and test specifications need some minor adjustments and a 
 | Feature | Implementation |
 |---------|----------------|
 | Record audio | Microphone → WAV file |
-| Transcribe | Shell to whisper.cpp |
+| Transcribe | Subprocess to whisper.cpp |
 | View result | Tray menu + notification |
 | Copy text | Hotkey + menu click |
 | History | SQLite, shown in tray menu |
@@ -171,7 +171,7 @@ Requirements, design, and test specifications need some minor adjustments and a 
 - [ ] API documentation (rustdoc)
 - [ ] User guide — Getting started, configuration, usage
 - [ ] Developer guide — Architecture, contributing
-- [ ] Deployment guide — Air-gap installation with AirGap Deploy
+- [ ] Deployment guide — air-gap installation with AirGap Deploy
 
 **CI/CD:**
 
@@ -204,7 +204,7 @@ MVP is complete when:
 Defer all of this until after shipping:
 
 - Error recovery beyond "show notification"
-- Accessibility
+- Dedicated accessibility features (screen reader support, etc.) -- basic accessibility via customizable hotkeys is in MVP
 - Dark mode toggle (follow system is fine)
 - Performance optimization
 - Code signing (needed for distribution, not development)

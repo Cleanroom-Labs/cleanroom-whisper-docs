@@ -60,9 +60,9 @@ Design Rationale
 +---------------------------------+---------------------------------------------------------+
 | SQLite                          | ACID transactions, single file backup                   |
 +---------------------------------+---------------------------------------------------------+
-| Shell to whisper.cpp            | Simplicity, user controls version                       |
+| Subprocess to whisper.cpp       | Simplicity, user controls version                       |
 +---------------------------------+---------------------------------------------------------+
-| No traits                       | Only one implementation exists (YAGNI)                  |
+| No trait abstractions           | Only concrete types — one implementation exists (YAGNI) |
 +---------------------------------+---------------------------------------------------------+
 
 File Structure
@@ -76,7 +76,7 @@ Per `Principles <https://cleanroomlabs.dev/docs/meta/principles.html>`_: **5 Rus
    ├── src/
    │   ├── main.rs       # Entry point, event loop, tray setup
    │   ├── audio.rs      # Record WAV from microphone
-   │   ├── whisper.rs    # Shell to whisper.cpp
+   │   ├── whisper.rs    # Subprocess to whisper.cpp
    │   ├── db.rs         # SQLite CRUD
    │   └── tray.rs       # Tray menu construction and handlers
    ├── Cargo.toml
@@ -129,13 +129,14 @@ Settings Validation
 +===========================+===========================================================+
 | ``whisper_binary_path``   | File exists, is executable                                |
 +---------------------------+-----------------------------------------------------------+
-| ``model_path``            | File exists, has ``.bin`` extension                       |
+| ``model_path``            | File exists, has ``.bin`` or ``.gguf`` extension          |
 +---------------------------+-----------------------------------------------------------+
 | ``hotkey_*``              | Valid key combination, no conflict with other app hotkeys |
 +---------------------------+-----------------------------------------------------------+
 | ``audio_input_device``    | Device exists in system (or empty for default)            |
 +---------------------------+-----------------------------------------------------------+
-| ``max_recording_minutes`` | Integer 1-480 (8 hours max)                               |
+| ``max_recording_minutes`` | Integer 1-480 (exceeds NFR-WHISPER-023 minimum of 120     |
+|                           | minutes to allow power-user configuration)                |
 +---------------------------+-----------------------------------------------------------+
 
 **Path validation:** - Reject paths containing ``..`` (path traversal) - Expand ``~`` to home directory - Convert to absolute path before storing
@@ -212,7 +213,7 @@ Record WAV from microphone using cpal + hound.
 whisper.rs
 ~~~~~~~~~~
 
-Shell to whisper.cpp using simple function (no trait).
+Subprocess to whisper.cpp using simple function (no trait).
 
 **Core function:** ``transcribe(whisper_binary, model_path, audio_path) -> Result<String>``
 
@@ -417,6 +418,7 @@ First-Run Flow
    │                                                       │
    │  Need whisper.cpp?                                    │
    │  https://github.com/ggerganov/whisper.cpp             │
+   │  (air-gap: see local docs for installation)           │
    │                                                       │
    │                                        [Continue]     │
    └───────────────────────────────────────────────────────┘

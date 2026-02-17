@@ -62,7 +62,7 @@ Constraints
 +=================================+===============================================================+
 | Offline-only                    | Zero network calls at runtime                                 |
 +---------------------------------+---------------------------------------------------------------+
-| Air-gap ready                   | Deployable without internet access                            |
+| air-gap ready                   | Deployable without internet access                            |
 +---------------------------------+---------------------------------------------------------------+
 | Platforms                       | macOS, Windows, Linux (GNOME requires AppIndicator extension) |
 +---------------------------------+---------------------------------------------------------------+
@@ -179,7 +179,7 @@ Transcription
    :priority: must
    :release: v1.0
 
-   Parse whisper.cpp stdout for text
+   Parse whisper.cpp stdout for transcription text. The parser SHALL extract plain text lines from stdout, ignoring timestamp prefixes and blank lines. Lines matching the pattern ``[HH:MM:SS.mmm --> HH:MM:SS.mmm]  <text>`` SHALL have timestamps stripped.
 
 .. req:: Transcription Notification
    :id: FR-WHISPER-010
@@ -347,7 +347,7 @@ Settings
    :priority: must
    :release: v1.0
 
-   Validate paths exist before save
+   Validate paths exist and are accessible before save. The system SHALL verify the file exists, is readable, and (for whisper binary) is executable. Validation SHALL run on every save attempt.
 
 .. req:: Hotkey Configuration
    :id: FR-WHISPER-025
@@ -432,7 +432,7 @@ Security
    :priority: must
    :release: v1.0
 
-   Sanitize file paths (reject `..`)
+   Sanitize file paths: reject paths containing ``..`` (path traversal), resolve symlinks to their target, and convert to absolute paths before use
 
 .. req:: Parameterized Queries
    :id: FR-WHISPER-032
@@ -697,7 +697,11 @@ Scalability
    :priority: should
    :release: v1.0
 
-   The system SHALL support audio recordings up to 120 minutes
+   The system SHALL support audio recordings up to 120 minutes.
+
+   .. note::
+
+      The SDD allows configuration up to 480 minutes; this NFR establishes the minimum supported duration.
 
 .. nfreq:: Large Transcription Handling
    :id: NFR-WHISPER-024

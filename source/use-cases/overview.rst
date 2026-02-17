@@ -107,7 +107,7 @@ Cleanroom Whisper can be deployed to air-gapped systems using AirGap Deploy:
 - Transfer via AirGap Transfer if package exceeds USB capacity
 - Deploy and build on isolated system
 
-**See:** `AirGap Deploy workflow example <https://cleanroomlabs.dev/docs/deploy/use-cases/use-case-cleanroom-whisper.html>`_
+**See:** :doc:`AirGap Deploy workflow example <airgap-deploy:use-cases/use-case-cleanroom-whisper>`
 
 Out of Scope
 ------------

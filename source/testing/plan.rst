@@ -472,7 +472,7 @@ System Tray Tests
    :sort: id
 
 .. test:: Tray Icon Shows Status
-   :id: TC-TRY-001
+   :id: TC-TRAY-001
    :status: approved
    :tags: whisper, tray, ui
    :tests: FR-WHISPER-027
@@ -482,7 +482,7 @@ System Tray Tests
    Verify tray icon shows app status (idle/recording/transcribing)
 
 .. test:: Left-Click Toggles Recording
-   :id: TC-TRY-002
+   :id: TC-TRAY-002
    :status: approved
    :tags: whisper, tray, ui
    :tests: FR-WHISPER-028
@@ -492,7 +492,7 @@ System Tray Tests
    Verify left-click on tray icon toggles recording
 
 .. test:: Right-Click Shows Menu
-   :id: TC-TRY-003
+   :id: TC-TRAY-003
    :status: approved
    :tags: whisper, tray, ui
    :tests: FR-WHISPER-029
@@ -502,7 +502,7 @@ System Tray Tests
    Verify right-click shows menu with Recent items, Settings, Quit
 
 .. test:: App Starts Minimized to Tray
-   :id: TC-TRY-004
+   :id: TC-TRAY-004
    :status: approved
    :tags: whisper, tray, ui
    :tests: FR-WHISPER-030
@@ -672,7 +672,11 @@ Non-Functional Tests
    :priority: critical
    :release: v1.0
 
-   Verify no network calls under any circumstance (monitor with network sniffer)
+   Verify no network calls under any circumstance (monitor with network sniffer).
+
+   .. note::
+
+      Overlaps with TC-SEC-003 (firewall test) and TC-SEC-004 (packet capture). Consider consolidating into a single network isolation test suite.
 
 .. test:: Offline Functionality Test
    :id: TC-NFR-006
@@ -682,7 +686,11 @@ Non-Functional Tests
    :priority: critical
    :release: v1.0
 
-   Verify 100% functionality with network disconnected
+   Verify 100% functionality with network disconnected.
+
+   .. note::
+
+      Overlaps with TC-SEC-005 (airplane mode test). Consider consolidating into a single offline verification procedure.
 
 .. test:: Transcription Performance
    :id: TC-NFR-007

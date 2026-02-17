@@ -11,6 +11,7 @@ Use Case: Quick Voice Memo
    :id: UC-WHISPER-001
    :status: approved
    :tags: whisper, voice-memo, quick-capture
+   :links: FR-WHISPER-001; FR-WHISPER-003; FR-WHISPER-008; FR-WHISPER-019
    :release: v1.0
 
    Capture quick thoughts, reminders, or ideas as text without typing using global hotkeys.

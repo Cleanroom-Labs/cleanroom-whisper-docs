@@ -9,51 +9,57 @@ API Reference
 Planned Architecture
 --------------------
 
-Based on :doc:`../design/sdd`, Cleanroom Whisper will consist of these modules:
+Based on :doc:`../design/sdd`, Cleanroom Whisper uses a flat 5-file architecture:
 
-Audio Module (``audio``)
-~~~~~~~~~~~~~~~~~~~~~~~~~
+``main.rs`` -- Entry Point
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Purpose:** Audio capture and recording
+**Purpose:** Application entry point, event loop, tray setup
 
 **Key Components:**
 
-- ``AudioRecorder`` - Main recording interface
-- ``AudioDevice`` - Platform-specific audio device abstraction
-- ``AudioBuffer`` - Circular buffer for audio data
+- Event loop coordinating audio, transcription, and UI
+- Hotkey registration via ``global-hotkey`` crate
 
-Whisper Module (``whisper``)
+``audio.rs`` -- Audio Capture
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Purpose:** Integration with whisper.cpp for transcription
+**Purpose:** Record WAV from microphone using cpal + hound
 
 **Key Components:**
 
-- ``WhisperEngine`` - Wrapper around whisper.cpp binary
-- ``ModelManager`` - Manages available whisper models
-- ``TranscriptionJob`` - Represents a transcription task
+- ``AudioCapture`` - Main recording struct (start, stop, elapsed, level metering)
+- ``list_input_devices()`` - Enumerate available audio input devices
 
-Database Module (``db``)
-~~~~~~~~~~~~~~~~~~~~~~~~~
+``whisper.rs`` -- Transcription
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Purpose:** SQLite persistence for transcription history
+**Purpose:** Subprocess invocation of whisper.cpp
 
 **Key Components:**
 
-- ``Database`` - SQLite connection and query interface
+- ``transcribe(whisper_binary, model_path, audio_path) -> Result<String>`` - Core transcription function
+
+``db.rs`` -- Database
+~~~~~~~~~~~~~~~~~~~~~
+
+**Purpose:** SQLite persistence for transcription history and settings
+
+**Key Components:**
+
+- ``Database`` - SQLite connection with CRUD operations (open, save, list, get, delete transcriptions; get/set settings)
 - ``Transcription`` - Data model for stored transcriptions
-- ``HistoryManager`` - CRUD operations for transcription history
 
-Tray Module (``tray``)
-~~~~~~~~~~~~~~~~~~~~~~~
+``tray.rs`` -- System Tray
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Purpose:** System tray interface and hotkey management
+**Purpose:** System tray menu construction, icon state, and notifications
 
 **Key Components:**
 
-- ``TrayIcon`` - System tray icon and menu
-- ``HotkeyManager`` - Global hotkey registration
-- ``Settings`` - User configuration management
+- ``TrayApp`` - System tray icon, menu, and state management
+- ``AppState`` - Enum: Idle, Recording, Transcribing
+- ``build_menu()`` - Menu construction from app state and recent transcriptions
 
 Developer Resources
 -------------------

@@ -11,9 +11,10 @@ Use Case: Accessibility - Hands-Free Text Input
    :id: UC-WHISPER-004
    :status: approved
    :tags: whisper, accessibility, hands-free
-   :release: v1.0
+   :links: FR-WHISPER-001; FR-WHISPER-003; FR-WHISPER-008; FR-WHISPER-019; FR-WHISPER-025
+   :release: v1.1
 
-   User with mobility limitations needs to input text without keyboard using customizable hotkeys.
+   User with mobility limitations needs to input text without keyboard using customizable hotkeys. Basic accessibility via customizable hotkeys (FR-WHISPER-025) is available in v1.0; dedicated accessibility features are deferred to v1.1.
 
    **Success Criteria:** Hotkeys customizable for accessibility hardware, fast transcription turnaround (<10 seconds), high accuracy to minimize editing, reliable offline operation.
 

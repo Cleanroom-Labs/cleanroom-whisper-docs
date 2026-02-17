@@ -7,7 +7,7 @@ Features
 --------
 
 - **Private** - All data stays on your machine. No network calls, no telemetry.
-- **Air-gap ready** - Deployable on systems with no internet access
+- **air-gap ready** - Deployable on systems with no internet access
 - **Keyboard-driven** - Global hotkeys for recording and copying transcriptions
 - **System tray** - Runs in background, no main window required
 - **Lightweight** - Pure Rust, single binary (~10-15 MB)
@@ -79,7 +79,7 @@ Building
 
 Requires Rust toolchain and platform-specific build tools (C compiler, audio libraries).
 
-See :doc:`Roadmap <roadmap>` for complete build instructions and architecture details.
+Requires Rust toolchain (``cargo build --release``). See :doc:`Design (SDD) <design/sdd>` for architecture details and build requirements.
 
 Air-Gapped Deployment
 ---------------------
@@ -110,7 +110,7 @@ Cleanroom Whisper is the **only cross-platform, open-source, air-gap-ready voice
 **vs macOS-only tools** (`MacWhisper <https://goodsnooze.gumroad.com/l/macwhisper>`__, `VoiceInk <https://github.com/gmelodie/voiceink>`__, `Superwhisper <https://superwhisper.com/>`__):
 
 - ✅ **Cross-platform**: Works on macOS, Windows, and Linux with consistent UX
-- ✅ **Air-gap deployment ready**: Vendored dependencies, no network requirements
+- ✅ **air-gap deployment ready**: Vendored dependencies, no network requirements
 - ✅ **System tray workflow**: Background operation with global hotkeys (no main window)
 - ✅ **Minimal dependencies**: 8 Rust crates vs typical 20-50+ dependencies
 
