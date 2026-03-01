@@ -31,8 +31,8 @@ needs_types = make_needs_types('WHISPER-')
 
 # Update intersphinx mapping with cross-project references
 intersphinx_mapping.update({
-    'airgap-deploy': ('https://cleanroomlabs.dev/docs/deploy/', None),
-    'airgap-transfer': ('https://cleanroomlabs.dev/docs/transfer/', None),
+    'airgap-deploy': ('https://cleanroomlabs.dev/docs/deploy/', '../../deploy/build/html/objects.inv'),
+    'airgap-transfer': ('https://cleanroomlabs.dev/docs/transfer/', '../../transfer/build/html/objects.inv'),
 })
 
 # -- HTML output options -----------------------------------------------------
